@@ -16,6 +16,10 @@ public class LeapYear{
         Scanner scanner = new Scanner(System.in);
         output("Enter year");
         int year = scanner.nextInt();
-        output("Working");
+        if(year % 4 == 0 && year % 100 != 0){
+            output(year + " is a leap year.");
+        }else{
+            output(year + " is not a leap year.");
+        }
     }
 }
